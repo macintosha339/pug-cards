@@ -1,0 +1,24 @@
+$cardWidth: 312px;
+$cardHeight: 424px;
+$imageSide: 164px;
+$avatarSide: 80px;
+$inkDark: #222C35;
+$inkLighter: #919CAB;
+$inkLight: #636F81;
+$gray: #E1E6EA;
+
+@mixin text-styles ($color, $line-height, $font-size, $font-weight) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: center;
+    color: $color;
+}
+
+.card-wrapper {
+    width: $cardWidth;
+    height: $cardHeight;
+    background: red;
+}
