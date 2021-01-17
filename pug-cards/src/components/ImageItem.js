@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const ImageItem = ({ imageName }) => {
     return pug`
-      img(src="https://raw.githubusercontent.com/macintosha339/pug-cards/main/pug-cards/src/assets/img/"+ imageName alt="logo")
+      img.post(src="https://raw.githubusercontent.com/macintosha339/pug-cards/main/pug-cards/src/assets/img/"+ imageName alt="logo" width="164" height="164")
     `;
 }
 
