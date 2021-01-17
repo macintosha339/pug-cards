@@ -7,8 +7,10 @@ $inkLighter: #919CAB;
 $inkLight: #636F81;
 $gray: #E1E6EA;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 @mixin text-styles ($color, $line-height, $font-size, $font-weight) {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: $font-weight;
     font-size: $font-size;
@@ -21,4 +23,91 @@ $gray: #E1E6EA;
     width: $cardWidth;
     height: $cardHeight;
     background: red;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px rgba(34, 44, 53, 0.05), 0px 1px 3px rgba(34, 44, 53, 0.15);
+}
+
+.image-block {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-left: 8px;
+    padding-top: 8px;
+}
+
+.info-block {
+    height: 156px;
+    background-color: blue;
+}
+
+.avatar {
+    margin: auto;
+    border-radius: 50%;
+    margin-top: -44px;
+}
+
+.info-block a {
+    text-decoration: none;
+}
+
+.info-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 156px - 17px;
+}
+
+.name, .age-gender-type, .content-topic, .followers, .name-social {
+    margin: 0;
+}
+
+.name {
+    @include text-styles($inkDark, 24px, 16px, 500);
+    position: absolute;
+    top: 44px + 7px;
+}
+
+.age-gender-type {
+    @include text-styles($inkLighter, 20px, 14px, normal);
+    position: absolute;
+    top: 44px + 7px + 22px;
+}
+
+.content-topic {
+    @include text-styles($inkLight, 24px, 16px, normal);
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 48px;
+    height: 2px;
+    background: $gray;
+}
+
+.social-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 266px;
+    height: 69px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+
+.item-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.followers {
+    @include text-styles($inkDark, 20px, 14px, 500);
+    margin-top: 7px;
+}
+
+.name-social {
+    @include text-styles($inkLighter, 20px, 14px, normal);
 }
