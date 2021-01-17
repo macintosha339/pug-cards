@@ -7,8 +7,8 @@ import PropTypes from 'prop-types'
 import ImageItem from './ImageItem'
 import SocialList from './SocialList'
 
-// { images, avatar, name, ageGenderType, contentTopics }
 const Card = ({ images, avatar, name, ageGenderType, contentTopics, socials }) => {
+
     return pug`
       div.card-wrapper
         div.image-block

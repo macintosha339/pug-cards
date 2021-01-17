@@ -25,15 +25,20 @@ $gray: #E1E6EA;
     background: red;
     border-radius: 3px;
     box-shadow: 0px 0px 0px rgba(34, 44, 53, 0.05), 0px 1px 3px rgba(34, 44, 53, 0.15);
+    justify-self: center;
 }
 
 .image-block {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow-x: scroll;
     margin-left: 8px;
     padding-top: 8px;
 }
+
+.image-block::-webkit-scrollbar {
+    width: 30px;
+  }
 
 .info-block {
     height: 156px;
